@@ -63,6 +63,7 @@ modules:
           url: https://api.github.com/repos/doitsujin/dxvk/releases/latest
           tag-query: .tag_name
           version-query: $tag | sub("^[vV]"; "")
+          timestamp-query: .published_at
           is-main-source: true
       - type: file
         path: dxvk-ccache-win32.txt
