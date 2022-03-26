@@ -13,6 +13,7 @@
   </description>
   <url type="homepage">https://github.com/doitsujin/dxvk/</url>
   <releases>
+    <release version="1.10.1" date="2022-03-26"/>
     <release version="1.10" date="2022-03-04"/>
     <release version="1.9.4" date="2022-01-24"/>
     <release version="1.9.3" date="2022-01-11"/>
