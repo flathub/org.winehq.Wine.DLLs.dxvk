@@ -56,8 +56,8 @@ modules:
     sources: &dxvk-sources
       - type: git
         url: https://github.com/doitsujin/dxvk.git
-        tag: v1.10.2
-        commit: 40e4ea1fce3a26af1ef6e28fc3aba7f8df4787e4
+        tag: v1.10.3
+        commit: e4fd5e9e8d335e8a2c0814829207cbd421f7e40e
         x-checker-data:
           type: json
           url: https://api.github.com/repos/doitsujin/dxvk/releases/latest
