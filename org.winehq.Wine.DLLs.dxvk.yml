@@ -1,8 +1,8 @@
 id: org.winehq.Wine.DLLs.dxvk
 build-extension: true
 runtime: org.winehq.Wine
-runtime-version: stable-21.08
-sdk: org.freedesktop.Sdk//21.08
+runtime-version: stable-22.08
+sdk: org.freedesktop.Sdk//22.08
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mingw-w64
 build-options:
