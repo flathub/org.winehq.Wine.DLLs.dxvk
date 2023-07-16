@@ -40,7 +40,6 @@ modules:
     config-opts: &dxvk-config-opts
       - --buildtype=release
       - --strip
-      - -Denable_tests=true
       - -Denable_dxgi=true
       - -Denable_d3d9=true
       - -Denable_d3d10=true
@@ -48,16 +47,14 @@ modules:
     post-install: &dxvk-post-install
       - |
         set -e
-        for lib in dxgi d3d9 d3d10 d3d10core d3d10_1 d3d11; do
+        for lib in dxgi d3d9 d3d10core d3d11; do
           winebuild --builtin ${FLATPAK_DEST}/lib${SUFFIX}/$lib.dll
         done
-      - mkdir -p ${FLATPAK_DEST}/bin${SUFFIX}
-      - mv -v ${FLATPAK_DEST}/lib${SUFFIX}/*.exe ${FLATPAK_DEST}/bin${SUFFIX}/
     sources: &dxvk-sources
       - type: git
         url: https://github.com/doitsujin/dxvk.git
-        tag: v1.10.3
-        commit: e4fd5e9e8d335e8a2c0814829207cbd421f7e40e
+        tag: v2.2
+        commit: cae0a1cef3f4917cf525c5546da302ff5f968e8e
         x-checker-data:
           type: json
           url: https://api.github.com/repos/doitsujin/dxvk/releases/latest
