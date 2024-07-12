@@ -41,6 +41,7 @@ modules:
       - --buildtype=release
       - --strip
       - -Denable_dxgi=true
+      - -Denable_d3d8=true
       - -Denable_d3d9=true
       - -Denable_d3d10=true
       - -Denable_d3d11=true
