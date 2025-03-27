@@ -1,8 +1,8 @@
 id: org.winehq.Wine.DLLs.dxvk
 build-extension: true
 runtime: org.winehq.Wine
-runtime-version: stable-23.08
-sdk: org.freedesktop.Sdk//23.08
+runtime-version: stable-24.08
+sdk: org.freedesktop.Sdk//24.08
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mingw-w64
 build-options:
@@ -54,8 +54,8 @@ modules:
     sources: &dxvk-sources
       - type: git
         url: https://github.com/doitsujin/dxvk.git
-        tag: v2.4.1
-        commit: 0cf05780abd7250c2cd713b7749cf32180157cf5
+        tag: v2.6
+        commit: ad253b8a7e20b7cf16fce7d1c505928a434eac29
         x-checker-data:
           type: json
           url: https://api.github.com/repos/doitsujin/dxvk/releases/latest
