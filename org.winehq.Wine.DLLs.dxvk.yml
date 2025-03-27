@@ -15,7 +15,6 @@ build-options:
   cxxflags: -fno-stack-clash-protection
   ldflags: ''
   ldflags-override: true
-appstream-compose: false
 cleanup:
   - '*.a'
   - '*.la'
@@ -88,8 +87,6 @@ modules:
     buildsystem: simple
     build-commands:
       - install -Dm644 ${FLATPAK_ID}.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo
-      - appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak
-        ${FLATPAK_ID}
     sources:
       - type: file
         path: org.winehq.Wine.DLLs.dxvk.metainfo.xml
