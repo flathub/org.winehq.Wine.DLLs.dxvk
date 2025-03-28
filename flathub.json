@@ -2,5 +2,5 @@
     "skip-icons-check": true,
     "disable-external-data-checker": true,
     "only-arches": ["x86_64"],
-    "end-of-life": This application is no longer maintained because it doesn't work anymore since the release of Wine 9.0
+    "end-of-life": "This application is no longer maintained because it doesn't work anymore since the release of Wine 9.0."
 }
